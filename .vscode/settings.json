@@ -1,0 +1,14 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.stylelint": "always",
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "never",
+    "source.addMissingImports": "always",
+    "source.removeUnusedImports": "always",
+    "source.sortImports": "never"
+  },
+
+  "json.format.enable": false
+}

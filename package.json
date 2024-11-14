@@ -1,0 +1,58 @@
+{
+  "name": "protect-your-doc",
+  "private": true,
+  "version": "0.0.0",
+  "description": "make your package easier to find on the npm website",
+  "author": "Álvaro Orduna León <4264243+alorle@users.noreply.github.com>",
+  "license": "UNLICENSED",
+  "homepage": "https://github.com/alorle/protect-your-doc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alorle/protect-your-doc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alorle/protect-your-doc/issues"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22.11.0",
+    "npm": "~10.9.0"
+  },
+  "packageManager": "npm@10.9.0+sha512.65a9c38a8172948f617a53619762cd77e12b9950fe1f9239debcb8d62c652f2081824b986fee7c0af6c0a7df615becebe4bf56e17ec27214a87aa29d9e038b4b",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "check": "npm run lint:check && npm run format:check",
+    "fix": "npm run lint:fix && npm run format:fix",
+    "lint:check": "eslint . && stylelint **/*.css --allow-empty-input",
+    "lint:fix": "eslint . --fix && stylelint **/*.css --allow-empty-input --fix",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write ."
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-promise": "^7.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^15.12.0",
+    "prettier": "^3.3.3",
+    "stylelint": "^16.10.0",
+    "stylelint-config-clean-order": "^6.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.14.0",
+    "vite": "^5.4.10"
+  }
+}
