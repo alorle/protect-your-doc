@@ -1,7 +1,10 @@
 import { Helmet } from "react-helmet";
+import { useTranslation } from "react-i18next";
 
 function App() {
-  const title = "Protect your doc";
+  const { t } = useTranslation();
+
+  const title = t("Protect your doc");
 
   return (
     <>
