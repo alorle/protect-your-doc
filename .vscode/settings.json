@@ -10,5 +10,9 @@
     "source.sortImports": "never"
   },
 
-  "json.format.enable": false
+  "json.format.enable": false,
+
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": "file:///home/alorle/gh/alorle/protect-your-doc/.github/workflows/deploy.yml"
+  }
 }
